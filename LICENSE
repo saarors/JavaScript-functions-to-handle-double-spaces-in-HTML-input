@@ -1,1 +1,14 @@
+Custom Use-Only License
+
+Copyright (c) 2025 saarors
+
+Permission is granted to use this software *only via direct linking (e.g. via <script src="...">)* in personal or commercial websites.
+
+You may NOT:
+- Copy, modify, or redistribute the source code
+- Upload this code to other repositories or hosting services
+- Include this code directly in your own codebase
+- Use the code as part of another open-source or commercial package
+
+This software is provided as-is, without warranty of any kind.
 
