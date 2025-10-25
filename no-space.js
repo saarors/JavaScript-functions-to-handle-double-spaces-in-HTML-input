@@ -46,18 +46,31 @@
   function initInputCleaner() {
     const inputs = document.querySelectorAll('input[type="text"], textarea');
     const buttons = document.querySelectorAll('button.clean-spaces');
+    const forms = document.querySelectorAll('form');
 
+    
     inputs.forEach(input => {
       input.addEventListener('input', cleanInputValue);
       input.addEventListener('paste', handlePaste);
       input.addEventListener('blur', handleBlur);
     });
 
+    
     buttons.forEach(button => {
       button.addEventListener('click', () => {
         inputs.forEach(input => {
           input.value = stringUtils.cleanSpaces(input.value);
         });
+      });
+    });
+
+    /
+    forms.forEach(form => {
+      form.addEventListener('submit', () => {
+        inputs.forEach(input => {
+          input.value = stringUtils.cleanSpaces(input.value);
+        });
+        
       });
     });
   }
